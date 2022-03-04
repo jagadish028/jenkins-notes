@@ -1,0 +1,14 @@
+pipeline {
+        agent any
+        stages {
+              stage('build') {
+                  steps {
+                      sh '''
+                          mkdir file1
+                          pwd
+                          echo "creating file1"
+                          '''
+                  }
+              }
+        }
+}
